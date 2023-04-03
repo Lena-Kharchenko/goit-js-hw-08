@@ -11,7 +11,7 @@ let dataForm = JSON.parse(localStorage.getItem(LOCAL_KEY)) || {};
 const { email, message } = feedbackForm.elements;
 reloadPage();
 
-function onInputData(evt) {
+function onInputData() {
   dataForm = { email: email.value, message: message.value };
   localStorage.setItem(LOCAL_KEY, JSON.stringify(dataForm));
 }
