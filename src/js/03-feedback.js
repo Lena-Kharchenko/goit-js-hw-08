@@ -16,7 +16,7 @@ function onInputData() {
   localStorage.setItem(LOCAL_KEY, JSON.stringify(dataForm));
 }
 
-function reloadPage() {
+function reloadPage(evt) {
   if (dataForm) {
     email.value = dataForm.email || '';
     message.value = dataForm.message || '';
